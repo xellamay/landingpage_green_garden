@@ -12,8 +12,19 @@
 	box-sizing: border-box;
 }
 
+body {
+  font-family: "Mulish";
+  color: #3E2A35;
+}
+
+.section {
+  padding: 50px 0;
+}
+
 .section_main {
   height: 100vh;
+
+  padding: 0;
 
   background-image: url(./img/bg.jpg);
   background-position: center;
@@ -23,10 +34,9 @@
 
 .section__container {
   margin: 0 auto;
+  padding: 0 15px;
 
   max-width: 1100px;
-  font-family: "Mulish";
-  color: #3E2A35;
 }
 
 .header {
@@ -47,6 +57,10 @@
   margin-right: 60px;
   cursor: pointer;
   font-size: 24px;
+}
+
+.nav__link:active {
+  font-weight: bold;
 }
 
 .header__cart {
@@ -92,32 +106,175 @@
   background: #FCF8F8;
 }
 
+.section__content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section__title {
   display: block;
-  padding: 50px 0;
+  padding-bottom: 50px;
 
   text-align: center;
   font-size: 36px;
   font-weight: bold;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+}
+
 .about__title {
+  margin-bottom: 30px;
+
   font-size: 36px;
   font-weight: 300;
 }
 
 .about__content {
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+
   font-size: 30px;
   font-weight: 300;
 }
 
-.btn__white {
+.about__btn {
   padding: 10px 70px;
 
   font-size: 28px;
   font-weight: 400;
+  font-family: "Mulish";
 
   border-radius: 40px;
   border: 1px black solid;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.gallery {
+  padding: 0px 60px;
+  max-width: 560px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery__list {
+  display: flex;
+
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.gallery__btn {
+  position: absolute;
+  top: 217px;
+
+  cursor: pointer;
+}
+
+.gallery__btn_previous {
+  left: 0;
+}
+
+.gallery__btn_next {
+  right: 0;
+}
+
+.gallery__item {
+  list-style-type: none;
+}
+
+.gallery__img {
+  width: 440px;
+  height: 500px;
+}
+
+.gallery__title {
+  display: block;
+  text-align: center;
+
+  margin-top: 10px;
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.gallery__content {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+
+  font-size: 17px;
+  font-weight: 300;
+}
+
+/* ТРЕТИЙ ЭКРАН */
+
+.section_plants {
+  background: #EEF2F0;
+}
+
+.slider__plants {
+  position: relative;
+  padding: 0 60px;
+  margin-bottom: 50px;
+}
+
+.slider__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 225px;
+
+  cursor: pointer;
+}
+
+.slider__btn_previous {
+  left: 0;
+}
+
+.slider__btn_next {
+  right: 0;
+}
+
+.slider__item {
+  list-style-type: none;
+}
+
+.slider__title {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.slider__img {
+  width: 250px;
+  height: 360px;
+}
+
+.plants__btn {
+  padding: 10px 87px;
+
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Mulish";
+
+  border-radius: 40px;
+  border: 1px black solid;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.plants__more {
+  display: block;
+  text-align: center;
 }
